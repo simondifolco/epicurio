@@ -40,7 +40,7 @@ const modules = {
   },
 };
 
-// Redis configuration
+// Redis configuration // Simon/ Comment it out if REDIS issue
 if (process.env.REDIS_URL) {
   console.log('Redis url found, enabling event bus with redis');
   modules[Modules.EVENT_BUS] = {
